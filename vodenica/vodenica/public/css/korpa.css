@@ -1,0 +1,92 @@
+h1{
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+table img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+table button {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+table button:hover {
+    background-color: #c82333;
+}
+
+p{
+    text-align: center;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.red {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.red:hover {
+    background-color: #c82333;
+}
+
+.green {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.green:hover {
+    background-color: #218838;
+}

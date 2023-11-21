@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    background: white;
+  }
+  
+  .container {
+    max-width: 1420px;
+    margin: auto;
+  }
+  
+  section.featured {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    background: white;
+    padding-bottom: 10px;
+    padding-top: 110px;
+    width: 100%;
+    overflow: hidden;
+  }
+  section.featured .featured-item {
+    min-width: 330px;
+    max-height: 350px; 
+    margin: auto;
+    padding-bottom: 60px;
+    padding-top: 30px;
+  }
+  section.featured .featured-item h3 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  section.featured .featured-item img {
+    width: 250px;
+    height: 240px;
+  }
+  @media (max-width: 2000px) {
+    section.featured .featured-item img {
+      width: 250px;
+      height: 240px;
+    }
+  }
+  section.featured .featured-item p {
+    max-width: 300px;
+    margin: auto;
+    padding-bottom: 7px;
+  }
+  section.featured .featured-item .dugme {
+    padding-top: 10px;
+    margin: auto;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 200px;
+    padding: 5px;
+    border: 1px;
+    text-decoration: none;
+    text-decoration-line: none;
+    color: black;
+    background-color: wheat;
+  }
+  section.featured .featured-item .dugme:hover {
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  section.featured .featured-item .dugme a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  
+  .rezervacija {
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+    border: 2px;
+    border-color: white;
+  }
+  .rezervacija .h5 {
+    padding: 20px;
+  }
+  
+  footer {
+    bottom: 0;
+  }

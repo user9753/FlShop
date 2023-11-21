@@ -1,0 +1,62 @@
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.pregled-kupovine {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detalji-za-dostavu {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.proizvodi-u-korpi {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.ukupna-cena {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+form button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}

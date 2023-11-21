@@ -1,0 +1,8 @@
+Pokretanje projekta: 
+
+1.Pokrenuti xamp/wamp
+2.Otvoriti projekat u Visual Studio
+3.Pokrenuti(u  terminalu): composer update 
+4.Pokrenuti: php artisan migrate
+5.Pokrenuti: php artisan db:seed
+7.Pokrenuti: php artisan serve

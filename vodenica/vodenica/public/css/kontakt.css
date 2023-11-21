@@ -1,0 +1,66 @@
+form {
+    max-width: 500px;
+    margin: 110px auto;
+    padding: 20px;
+    background-color: wheat;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #eee;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(29, 141, 6);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color:rgb(236, 142, 0);
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(81, 203, 238, 0.8);
+  }
+  
+  *{
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+}
+
+body{
+  overflow-x: hidden;
+  width:100%;
+  background: rgb(0, 0, 0);}
+
+.container{
+  max-width: 1420px;
+  margin: auto;
+}
