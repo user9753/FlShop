@@ -20,4 +20,9 @@ class Proizvod extends Model
         
     }
   
+    public function getRaspolozivoAttribute($value)
+    {
+        return $value ? 'da' : 'ne';
+    }
+
 }

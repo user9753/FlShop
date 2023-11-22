@@ -13,5 +13,11 @@ class ProizvodController extends Controller
     return view('proizvod')->with('proizvod', $proizvod);
 }
 
+public function show($id)
+{
+    $proizvod = Proizvod::find($id);
+    return view('naruci', compact('proizvod'));
+
+}
 
 }

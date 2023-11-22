@@ -6,7 +6,7 @@
         <img src="{{ asset('images/' . $proizvod->slika) }}" alt="{{ $proizvod->naziv }}">
         <p>Opis: {{ $proizvod->opis }}</p>
         <p>Cena: <b>{{ $proizvod->cena }}</b> dinara</p>
-        <p>Raspoloživo: {{ $proizvod->raspolozivo }} komada</p>
+        <p>Raspoloživo: {{ $proizvod->raspolozivo }} </p>
 
             <form method="post" action="{{ route('dodajUKorpu', ['id' => $proizvod->id]) }}">
 

@@ -20,7 +20,7 @@ return new class extends Migration
             $table->enum('pakovanje', ['1', '5', '25']);
             $table->text('opis');
             $table->string('slika')->default('default.jpg');
-            $table->boolean('raspolozivo')->default(true);
+            $table->string('raspolozivo')->default(true);
             $table->timestamps();
         });
     }

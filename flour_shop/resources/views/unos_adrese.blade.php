@@ -34,7 +34,20 @@
         
             <label for="postanski_broj">Poštanski broj:</label>
             <input type="text" name="postanski_broj" id="postanski_broj" required value="{{ $adresa->postanski_broj }}">
+            @else
+            <label for="grad">Grad:</label>
+            <input type="text" name="grad" id="grad" required>
+    
+            <label for="ulica">Ulica:</label>
+            <input type="text" name="ulica" id="ulica" required>
+    
+            <label for="broj">Broj:</label>
+            <input type="text" name="broj" id="broj" required>
+    
+            <label for="postanski_broj">Poštanski broj:</label>
+            <input type="text" name="postanski_broj" id="postanski_broj" required>
         @endif
+    
 
 
         <button type="submit">Nastavi</button>

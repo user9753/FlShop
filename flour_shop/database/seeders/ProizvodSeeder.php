@@ -35,7 +35,7 @@ class ProizvodSeeder extends Seeder
             Jačanje imunološkog sistema
             Ovom hranjivom bombom dodajte poseban ukus i zdravlje vašim jelima! Ječmeno brašno je sjajan izbor za sve one koji cene kvalitetnu ishranu.',
             'slika' => 'default.jpg',
-            'raspolozivo' => true,
+            'raspolozivo' => 'true',
             ],
 [
     'naziv' => 'Kukuruzno belo brašno',
@@ -43,7 +43,7 @@ class ProizvodSeeder extends Seeder
     'pakovanje' => 1,
     'opis' => 'Kvalitetno brašno',
     'slika' => 'belikukuruz.jpg',
-    'raspolozivo' => true,
+    'raspolozivo' => 'true',
 ],
 [
     'naziv' => 'Kukuruzno žuto brašno',
@@ -51,7 +51,7 @@ class ProizvodSeeder extends Seeder
     'pakovanje' => 1,
     'opis' => 'Kvalitetno brašno',
     'slika' => 'zutikukuruz.jpg',
-    'raspolozivo' => true,
+    'raspolozivo' => 'true',
 ],
 [
     'naziv' => 'Heljdino brašno',
@@ -77,7 +77,7 @@ class ProizvodSeeder extends Seeder
     Povećanje energije i vitalnosti
     Ovo brašno čini odličnim dodatkom svakodnevnoj ishrani, posebno za one koji žele voditi zdrav i uravnotežen način života.',
     'slika' => 'heljda.jpg',
-    'raspolozivo' => true,
+    'raspolozivo' => 'true',
 ],
 [
     'naziv' => 'Pšenično integralno brašno',
@@ -85,7 +85,7 @@ class ProizvodSeeder extends Seeder
     'pakovanje' => 1,
     'opis' => 'Kvalitetno brašno',
     'slika' => 'default.jpg',
-    'raspolozivo' => true,
+    'raspolozivo' => 'true',
 ],
 [
     'naziv' => 'Ražano brašno',
@@ -93,7 +93,7 @@ class ProizvodSeeder extends Seeder
     'pakovanje' => 1,
     'opis' => 'Kvalitetno brašno',
     'slika' => 'default.jpg',  
-    'raspolozivo' => true,
+    'raspolozivo' => 'true',
 ],
         ]);
     }
