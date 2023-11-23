@@ -5,6 +5,7 @@ use App\Http\Controllers\PocetnaController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\ProizvodController;
 use App\Http\Controllers\NarudzbinaController;
+use App\Http\Controllers\AdminProizvodController;
 
 
 /*
@@ -68,4 +69,12 @@ Route::post('/kreiraj-porudzbinu', [NarudzbinaController::class, 'kreirajPorudzb
     Route::get('/admin', function () {
         return view('admin/pocetna');
     });
+
+    Route::get('/admin/proizvod', [AdminProizvodController::class, 'prikaziProizvode'])->name('prikaziProizvode');
+
+    Route::get('/izmeni_proizvod/{id}', [AdminProizvodController::class, 'izmeniProizvod'])->name('izmeniProizvod');
+
+    Route::get('/obrisi_proizvod', [AdminProizvodController::class, 'obrisiProizvod'])->name('obrisi_proizvod');
+
+    Route::delete('/obrisi_proizvod/{id}', [AdminProizvodController::class, 'obrisiProizvod'])->name('obrisiProizvod');
 

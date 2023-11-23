@@ -15,7 +15,7 @@
 			</div>
 			<ul>
 				<li><a href="{{ url('/') }}">Glavna</a></li>
-				<li><a href="{{ url('/admin/proizvodi') }}">Proizvodi</a></li>
+				<li><a href="{{ url('/admin/proizvod') }}">Proizvodi</a></li>
 				<li><a href="{{ url('/korisnici') }}">Korisnici</a></li>
 				<li><a href="{{ url('/izvestaji') }}">Izvestaji</a></li>
 			</ul>

@@ -68,14 +68,10 @@ public function sacuvajAdresu(Request $request)
 
     $korisnik = auth()->user();
 
-     // Dodajte 'id_korisnika' u podatke
-     $podaci['id_korisnika'] = $korisnik->id;
-    
     Adresa::updateOrCreate(
-        ['id_korisnika' => $korisnik->id],
+        ['id' => $korisnik->id],
         $podaci
     );
-
     return redirect()->route('nastaviNarucivanje');
 }
 

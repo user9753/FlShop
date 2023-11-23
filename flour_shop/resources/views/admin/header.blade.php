@@ -4,7 +4,7 @@
 	<title>Admin</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ asset('/css/admin/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/admin_header.css') }}">
 </head>
 <body>
 	<header>
@@ -14,11 +14,10 @@
 				<span></span>
 			</div>
 			<ul>
-				<li><a href="../index.php">Glavna</a></li>
-				<li><a href="{{url('/menageri')}}">Menadžeri</a></li>
-				<li><a href="{{url('admin/vozila')}}">Vozila</a></li>
-				<li><a href="{{url('/korisnici')}}">Korisnici</a></li>
-				<li><a href="{{url('/izvestaji')}}">Izvestaji</a></li>
+				<li><a href="{{ url('/') }}">Glavna</a></li>
+				<li><a href="{{ url('/admin/proizvod') }}">Proizvodi</a></li>
+				<li><a href="{{ url('/korisnici') }}">Korisnici</a></li>
+				<li><a href="{{ url('/izvestaji') }}">Izvestaji</a></li>
 			</ul>
 		</div>
 	</header>

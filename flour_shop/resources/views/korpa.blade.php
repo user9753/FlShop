@@ -29,7 +29,7 @@
                     <td>{{ $narudzbina->proizvod->naziv }}</td>
                     <td>{{ $narudzbina->ukupna_kolicina }} x {{ $narudzbina->pakovanje }} kg</td>
                     <td>{{ $narudzbina->proizvod->cena }} din/kg</td>
-                    <td>{{ $narudzbina->ukupna_kolicina * $narudzbina ->proizvod->cena }} dinara</td>
+                    <td>{{ $narudzbina->ukupna_kolicina * $narudzbina->pakovanje * $narudzbina ->proizvod->cena }} dinara</td>
                     <td>
                         <form method="POST" action="{{ route('obrisiIzKorpe', $narudzbina->proizvod->id) }}">
                             @csrf
