@@ -78,3 +78,6 @@ Route::post('/kreiraj-porudzbinu', [NarudzbinaController::class, 'kreirajPorudzb
 
     Route::delete('/obrisi_proizvod/{id}', [AdminProizvodController::class, 'obrisiProizvod'])->name('obrisiProizvod');
 
+    Route::get('/admin/proizvod/{id}/izmeni', [AdminProizvodController::class, 'izmeni'])->name('izmeni-proizvod');
+    Route::put('/admin/proizvod/{id}/azuriraj', [AdminProizvodController::class, 'azuriraj'])->name('azuriraj-proizvod');
+
