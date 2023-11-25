@@ -35,7 +35,6 @@ class AdminProizvodController extends Controller
     public function azuriraj(Request $request, $id)
     {
         $request->validate([
-            // dodajte pravila validacije prema vašim potrebama
             'naziv' => 'required|string',
             'cena' => 'required|numeric',
             'pakovanje' => 'required|in:1,5,25',
@@ -53,7 +52,6 @@ class AdminProizvodController extends Controller
         $proizvod->raspolozivo = $request->has('raspolozivo') ? true : false;
 
         if ($request->hasFile('slika')) {
-            // logika za čuvanje slike
             $slika = $request->file('slika');
             $imeSlike = time().'.'.$slika->getClientOriginalExtension();
             $slika->move(public_path('putanja/do/slika'), $imeSlike);
