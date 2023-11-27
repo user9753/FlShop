@@ -73,13 +73,12 @@ Route::post('/kreiraj-porudzbinu', [NarudzbinaController::class, 'kreirajPorudzb
     Route::get('/admin/proizvod', [AdminProizvodController::class, 'prikaziProizvode'])->name('prikaziProizvode');
 
     Route::get('/izmeni_proizvod/{id}', [AdminProizvodController::class, 'izmeniProizvod'])->name('izmeniProizvod');
+    Route::get('/obrisi_proizvod', [AdminProizvodController::class, 'prikaziObrisiProizvod'])->name('prikazi_obrisi_proizvod');
 
-    Route::delete('/admin/proizvod/{id}', [AdminProizvodController::class, 'obrisiProizvod'])->name('obrisi-proizvod');
-
-    Route::get('/obrisi_proizvod', [AdminProizvodController::class, 'obrisiProizvod'])->name('obrisi_proizvod');
-
-    Route::delete('/obrisi_proizvod/{id}', [AdminProizvodController::class, 'obrisiProizvod'])->name('obrisiProizvod');
+    Route::delete('/obrisi_proizvod/{id}', [AdminProizvodController::class, 'obrisiProizvod'])->name('obrisi-proizvod');
 
     Route::get('/admin/proizvod/{id}/izmeni', [AdminProizvodController::class, 'izmeni'])->name('izmeni-proizvod');
     Route::put('/admin/proizvod/{id}/azuriraj', [AdminProizvodController::class, 'azuriraj'])->name('azuriraj-proizvod');
 
+    Route::get('/dodaj_proizvod', [AdminProizvodController::class, 'prikaziFormuDodavanje'])->name('dodaj-proizvod');
+    Route::post('/dodaj_proizvod', [AdminProizvodController::class, 'dodajProizvod'])->name('sacuvaj-proizvod');
