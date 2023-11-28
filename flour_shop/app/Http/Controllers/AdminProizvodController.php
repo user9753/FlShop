@@ -81,31 +81,32 @@ public function dodajProizvod(Request $request)
     $request->validate([
         'naziv' => 'required|string',
         'cena' => 'required|numeric',
-        'pakovanje' => 'required|array',
+        'pakovanje' => 'required|array', 
         'opis' => 'required|string',
-        'slika' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        'slika' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         'raspolozivo' => 'boolean',
     ]);
 
     $proizvod = new Proizvod;
     $proizvod->naziv = $request->naziv;
-    $proizvod->cena = $request->cena;
-    $proizvod->pakovanje = implode(',', $request->pakovanje);
+    $proizvod->cena = floatval($request->cena);
+    $proizvod->pakovanje = implode(',', $request->pakovanje); 
     $proizvod->opis = $request->opis;
-    $proizvod->raspolozivo = $request->has('raspolozivo');
+    $proizvod->raspolozivo = $request->has('raspolozivo'); 
 
     if ($request->hasFile('slika')) {
         $slika = $request->file('slika');
-        $imeSlike = time() . '.' . $slika->getClientOriginalExtension();
-        $slika->storeAs('public/slike', $imeSlike);
+        $imeSlike = time().'.'.$slika->getClientOriginalExtension();
+        $slika->move(public_path('putanja/do/slika'), $imeSlike);
 
         $proizvod->slika = $imeSlike;
     }
 
     $proizvod->save();
 
-    return redirect()->route('prikaziProizvode')->with('success', 'Proizvod uspešno dodat.');
+    return redirect()->route('dodaj-proizvod')->with('success', 'Proizvod uspešno dodat.');
 }
+
 }
 
 
