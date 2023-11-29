@@ -9,9 +9,10 @@
     background: white;
   }
   
-  .container {
+  .containers {
     max-width: 1420px;
     margin: auto;
+    padding-bottom: 20px;
   }
   
   section.featured {
@@ -21,10 +22,15 @@
     color: black;
     background: white;
     padding-bottom: 10px;
-    padding-top: 110px;
+    padding-top: 30px;
     width: 100%;
     overflow: hidden;
   }
+
+  section.featured .col{
+padding-bottom: 20px;
+  }
+
   section.featured .featured-item {
     min-width: 330px;
     max-height: 350px; 

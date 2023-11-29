@@ -82,3 +82,5 @@ Route::post('/kreiraj-porudzbinu', [NarudzbinaController::class, 'kreirajPorudzb
 
     Route::get('/dodaj_proizvod', [AdminProizvodController::class, 'prikaziFormuDodavanje'])->name('dodaj-proizvod');
     Route::post('/dodaj_proizvod', [AdminProizvodController::class, 'dodajProizvod'])->name('sacuvaj-proizvod');
+
+    Route::get('/korisnici', [AdminProizvodController::class, 'korisnici'])->name('korisnici.index');

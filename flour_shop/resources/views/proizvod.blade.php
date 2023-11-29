@@ -29,6 +29,5 @@
 @else 
 <h1>Ne postoji</h1>
 @endif
-
-
 @endsection
+

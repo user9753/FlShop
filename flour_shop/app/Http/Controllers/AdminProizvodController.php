@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Proizvod;
-
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class AdminProizvodController extends Controller
@@ -106,6 +106,13 @@ public function dodajProizvod(Request $request)
 
     return redirect()->route('dodaj-proizvod')->with('success', 'Proizvod uspešno dodat.');
 }
+
+public function korisnici()
+    {
+        $users = User::whereNull('role')->get();
+
+        return view('admin.korisnici', compact('users'));
+    }
 
 }
 
