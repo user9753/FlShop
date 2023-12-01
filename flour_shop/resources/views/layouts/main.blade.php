@@ -19,7 +19,6 @@
         </div>
         <ul class="menu">
             <li><a href="{{ url('/') }}">Početna</a></li>
-            <li><a href="{{ url('/onama') }}">O nama</a></li>
             <li><a href="{{ url('/proizvod') }}">Proizvodi</a></li>
             <li><a href="{{ url('/kontakt') }}">Kontakt</a></li>
             <li class="cart"><a href="{{ url('/korpa') }}"><i class="fa-solid fa-cart-shopping"></i> Korpa</a></li>
