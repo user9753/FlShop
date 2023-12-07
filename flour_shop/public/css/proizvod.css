@@ -48,8 +48,8 @@ padding-bottom: 20px;
   }
   @media (max-width: 2000px) {
     section.featured .featured-item img {
-      width: 250px;
-      height: 240px;
+      width: 220px;
+      height: 250px;
     }
   }
   section.featured .featured-item p {

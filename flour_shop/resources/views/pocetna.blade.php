@@ -4,24 +4,26 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 @section("sadrzaj")
 
-<h1 class="animate__animated animate__backInLeft">Dobrodošli na naš sajt!</h1>
+<div class="opis">
+<h1 class="animate__animated animate__backInLeft">Šta nudimo? </h1>
 
-<p class="opis">Vodenica je stara oko 150 godina i nakon dvadesetogodišnje pauze ponovo je obnovljena i aktivno melje. Nalazi se na Backoj reci i jedna je od retkih koja je danas aktivna i sačuvana.
+<p class="opis">Bavimo se mlevenjem i prodajom integralnog brašna(kukurznog, heljdinog, ražanog, ječmenog i pšeničnog integralnog) na vodenici potočari koja je stara oko 150 godina .Nalazi se na Backoj reci i jedna je od retkih koja je danas aktivna i sačuvana.
 </p>
 <p class="opis">Dođite i posetite nas,bavimo se mlevenjem i prodajom integralnog brašna(kukurznog, heljdinog, ražanog, ječmenog i pšeničnog integralnog).</p>
-
+</div>
 <div class="galerija">
     <div class="slike">
         <img src="images/novine.jpg" alt="Slika 1">
-        <img src="images/heljda.jpg" alt="Slika 2">
+        <img src="images/jaz.jpg" alt="Slika 2">
         <img src="images/zutikukuruz.jpg" alt="Slika 3">
+        <img src="images/sajam.jpg" alt="Slika 3">
     </div>
     <button class="strelica levo">&#8249;</button>
     <button class="strelica desno">&#8250;</button>
 </div>
-
-<p>Dođite i posetite nas,bavimo se mlevenjem i prodajom integralnog brašna(kukurznog, heljdinog, ražanog, ječmenog i pšeničnog integralnog).</p>
-
+<div class="opis">
+<p class="opis">Dođite i posetite nas,bavimo se mlevenjem i prodajom integralnog brašna(kukurznog, heljdinog, ražanog, ječmenog i pšeničnog integralnog).</p>
+</div>
 
 <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=vodenica tulare&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/">Connections Unlimited</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
 
@@ -43,7 +45,7 @@ h1{
     padding-top: 25px;
 }
 
-p .opis{
+div .opis{
     text-align: center;
     background-color:#f9f9f9; 
     margin: 0 !important;
@@ -66,8 +68,8 @@ p .opis{
 }
 
 .slike img {
-    max-width: 600px;
-    max-height: 600px;
+    max-width: 900px;
+    max-height: 800px;
     width: auto;
     height: auto;
     display: none;
@@ -79,7 +81,7 @@ p .opis{
 }
 
 .strelica {
-    font-size: 24px;
+    font-size: 44px;
     background: none;
     border: none;
     cursor: pointer;
