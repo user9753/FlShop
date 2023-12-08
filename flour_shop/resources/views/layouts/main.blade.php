@@ -12,10 +12,11 @@
 </head>
 <body>
 
-<header>
-    <nav>
-        <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
+    <header>
+        <div class="logo">
+            <a href="{{ url('/') }}">
+                <img src="{{ asset('images/logo.png') }}" alt="Logo">
+            </a>
         </div>
         <ul class="menu">
             <li><a href="{{ url('/') }}">Početna</a></li>
@@ -23,8 +24,10 @@
             <li><a href="{{ url('/kontakt') }}">Kontakt</a></li>
             <li class="cart"><a href="{{ url('/korpa') }}"><i class="fa-solid fa-cart-shopping"></i> Korpa</a></li>
         </ul>
-    </nav>
-</header>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
 
 @yield('sadrzaj')
 
@@ -43,7 +46,7 @@
            
      <div class="col-md-4 col-sm-12"> 
         <p><b>Linkovi</b></p>
-        <p><a href="#" class="">Dostava</a><br>
+        <p><a href="https://www.posta.rs/DocumentViewer.aspx?IdDokument=1000161&Dokument=stanovnistvo-paketske-srbija-paket-lat.pdf" class="">Dostava</a><br>
         <a href="#" class="">Galerija</a><br>
         <a href="proizvod" class="">Proizvodi</a></p>
      </div>
@@ -75,12 +78,22 @@
 
 <style>
 
+.logo {
+    max-width: 50px; 
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
 header {
     background-color: #F5DEB3; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    margin-bottom: 95px;
 }
 
 .menu-toggle {
@@ -145,6 +158,10 @@ header {
         display: flex;
     }
 
+.logo{
+    display: none;
+}
+
     .cart {
         display: flex;
         align-items: center;
@@ -158,6 +175,8 @@ header {
 }
 
 }
+
+
 
 </style>
 

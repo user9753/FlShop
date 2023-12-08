@@ -5,12 +5,12 @@
 @section("sadrzaj")
 
 <div class="opis">
-<h1 class="animate__animated animate__backInLeft">Šta nudimo? </h1>
-
-<p class="opis">Bavimo se mlevenjem i prodajom integralnog brašna(kukurznog, heljdinog, ražanog, ječmenog i pšeničnog integralnog) na vodenici potočari koja je stara oko 150 godina .Nalazi se na Backoj reci i jedna je od retkih koja je danas aktivna i sačuvana.
-</p>
-<p class="opis">Dođite i posetite nas,bavimo se mlevenjem i prodajom integralnog brašna(kukurznog, heljdinog, ražanog, ječmenog i pšeničnog integralnog).</p>
+<h1 class="animate__animated animate__backInLeft">Ko smo mi? </h1>
+<p class="opis">Mi smo mali proizvođači čija se porodica tradicionalno oko 150 godina bavi vodeničarskim zanatom, odnosno mlevenjem integralnog brašna na vodenici potočari.</p>   
+<h1 class="animate__animated animate__backInLeft">Šta nudimo?</h1>
+<p class="opis"> Nudimo integralna brašna i u ponudi imamo: kukuruzno, heljdino, ražano, ječmeno i pšenično (naše proizvode možete pogledati na stranici <b><a href="{{ route('proizvod') }}">ovde</a></b>)</p>
 </div>
+
 <div class="galerija">
     <div class="slike">
         <img src="images/novine.jpg" alt="Slika 1">
@@ -22,7 +22,8 @@
     <button class="strelica desno">&#8250;</button>
 </div>
 <div class="opis">
-<p class="opis">Dođite i posetite nas,bavimo se mlevenjem i prodajom integralnog brašna(kukurznog, heljdinog, ražanog, ječmenog i pšeničnog integralnog).</p>
+    <h1 class="animate__animated animate__backInLeft">Gde se nalazimo?</h1>
+<p class="opis">Nalazimo se u selu Tulare kod Prokuplja, a lokaciju vodenice možete pogledati i ovde: </p>
 </div>
 
 <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=vodenica tulare&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/">Connections Unlimited</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
@@ -42,7 +43,7 @@ h1{
     text-align: center;
     background-color: #f9f9f9;
     margin: 0 !important;
-    padding-top: 25px;
+    padding-top: 55px;
 }
 
 div .opis{
@@ -50,6 +51,7 @@ div .opis{
     background-color:#f9f9f9; 
     margin: 0 !important;
     padding-top:30px; 
+    padding-bottom: 30px;
 }
 
 .galerija {
